@@ -25,27 +25,26 @@ jobs:
         with:
           fetch-depth: 0
       
-      # 安装 pnpm - 使用与 package.json 一致的版本
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10.28.2  # 修改为具体版本号，与 package.json 一致
-          run_install: false
+      # 移除 pnpm 安装步骤
+      # - name: Install pnpm
+      #   uses: pnpm/action-setup@v4
       
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
           node-version: 24
-          cache: pnpm
+          cache: npm  # 使用 npm 缓存
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
+      # 使用 npm 安装依赖
       - name: Install dependencies
-        run: pnpm install
+        run: npm install  # 使用 npm install 而不是 npm ci
       
+      # 使用 npm 构建
       - name: Build with VitePress
-        run: pnpm docs:build
+        run: npm run docs:build
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
