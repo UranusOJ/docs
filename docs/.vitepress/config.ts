@@ -19,7 +19,7 @@ export default defineConfig({
           { text: '关于 UranusOJ', link: '/about-uranusoj' },
           { text: '社区规则', link: '/community-rule' },
           { text: '学术规范', link: '/academic-norms' },
-          { text: '学术规范', link: '/user-docs' },
+          { text: '用户文档', link: '/user-docs' },
         ]
       },
       {
