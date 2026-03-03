@@ -18,7 +18,6 @@ export default defineConfig({
         items: [
           { text: '关于 UranusOJ', link: '/about-uranusoj' },
           { text: '插件开源', link: '/opensource' },
-          { text: '安装部署', link: '/installation' }
         ]
       },
     ],
