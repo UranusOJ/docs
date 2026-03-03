@@ -14,10 +14,11 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: '入门指南',
+        text: '文档',
         items: [
           { text: '关于 UranusOJ', link: '/about-uranusoj' },
           { text: '插件开源', link: '/opensource' },
+          { text: '社区规则', link: '/community-rule' },
         ]
       },
     ],
