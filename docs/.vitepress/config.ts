@@ -14,17 +14,18 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: '文档',
+        text: '用户文档',
         items: [
           { text: '关于 UranusOJ', link: '/about-uranusoj' },
-          { text: '插件开源', link: '/opensource' },
+          { text: '社区规则', link: '/community-rule' },
+          { text: '学术规范', link: '/academic-norms' },
+          { text: '学术规范', link: '/user-docs' },
         ]
       },
       {
-        text: '社区规则',
+        text: '开发文档',
         items: [
-          { text: '社区规则', link: '/community-rule' },
-          { text: '学术规范', link: '/academic-norms' },
+          { text: '插件开源', link: '/opensource' },
         ]
       },
     ],
